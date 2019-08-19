@@ -1,0 +1,135 @@
+.pos-ab-logo img{
+	position:absolute;
+	background:#fff;
+	border:3px solid #0060b1;
+	width:100px !important;
+	height:auto;
+	z-index:1024;
+	padding:6px;
+}
+.footer-right-address li{
+		height:30px;
+}
+.py-4{
+	padding:40px 0px;
+}
+@media(max-width:767px) {
+	
+	.pos-ab-logo img {
+    position: absolute;
+    background: #fff;
+    border: 3px solid #0060b1;
+    width: 47px !important;
+    height: auto;
+    z-index: 1024;
+    padding: 6px;
+}
+}
+.career-info-panel {
+	background: #fff;
+	border-radius: 10px;
+	box-shadow: 2px 0px 10px -3px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease 0s;
+	border: 1px solid #d0dbe1;
+	padding: 50px 45px;
+	margin: 30px 0 0;
+}
+.career-info-panel:hover,
+.career-info-panel:focus {
+	border-color: #57bce2;
+	box-shadow: 2px 0px 10px -3px #57bce2;
+}
+.career-info-panel h3 {
+	font-size: 22px;
+	font-weight: 500;
+	padding: 0 0 10px;
+	transition: all 0.3s ease 0s;
+}
+.career-info-panel:hover h3 {
+	color: #57bce2;
+}
+.career-info-panel p {
+	font-size: 14px;
+	line-height: 22px;
+}
+.career-info-panel ul {
+	padding: 5px 0 0;
+	margin: 0;
+	display: block;
+}
+.career-info-panel ul li {
+	width: 100%;
+	padding: 0 0 0 20px;
+	position: relative;
+	display: inline-block;
+}
+.career-info-panel ul li:before {
+	width: 8px;
+	height: 8px;
+	border-radius: 100px;
+	background: #c3bab9;
+	position: absolute;
+	top: 8px;
+	left: 0;
+	content: "";
+}
+.career-info-panel a.apply-now {
+	background: #798c93;
+	padding: 0 20px;
+	margin-bottom: 0px;
+}
+.career-info-panel a.apply-now:hover {
+	background: #57bce2;
+}
+.apply-now {
+	max-width: 175px;
+	background: #798c93;
+	border-radius: 3px;
+	color: #fff;
+	display: block;
+	font-size: 14px;
+	font-weight: 700;
+	height: 48px;
+	line-height: 48px;
+	margin: 20px auto 15px;
+	padding: 0 20px;
+	text-align: center;
+	text-transform: uppercase;
+}
+.apply-now:hover,
+.career-info-panel:hover .apply-now {
+	background: #f29a32;
+}
+.career-accordian {
+	padding: 30px 0 0;
+}
+.career-accordian.faq .card-header {
+	padding-top: 16px;
+	padding-bottom: 16px;
+}
+.career-accordian.faq .card-header a {
+	display: block;
+}
+.career-accordian.faq .card-header h3 {
+	width: calc(100% - 30px);
+}
+.career-accordian ul {
+	padding: 20px 0 0;
+	display: block;
+}
+.career-accordian li {
+	padding: 0 60px 0 20px;
+	position: relative;
+	width: auto;
+	display: inline-block;
+}
+.career-accordian ul li:before {
+	width: 8px;
+	height: 8px;
+	border-radius: 100px;
+	background: #c3bab9;
+	position: absolute;
+	top: 8px;
+	left: 0;
+	content: "";
+}

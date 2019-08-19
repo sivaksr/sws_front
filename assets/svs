@@ -1,0 +1,89 @@
+/*
+SQLyog Community v11.52 (64 bit)
+MySQL - 10.1.37-MariaDB : Database - svs
+*********************************************************************
+*/
+
+/*!40101 SET NAMES utf8 */;
+
+/*!40101 SET SQL_MODE=''*/;
+
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+CREATE DATABASE /*!32312 IF NOT EXISTS*/`svs` /*!40100 DEFAULT CHARACTER SET latin1 */;
+
+USE `svs`;
+
+/*Table structure for table `contact_us` */
+
+DROP TABLE IF EXISTS `contact_us`;
+
+CREATE TABLE `contact_us` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) DEFAULT NULL,
+  `email` varchar(255) DEFAULT NULL,
+  `message` varchar(255) DEFAULT NULL,
+  `created` date DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
+
+/*Data for the table `contact_us` */
+
+insert  into `contact_us`(`id`,`name`,`email`,`message`,`created`) values (1,'shailaja','shailu.gattu26@gmail.com','eqfwef','2019-07-12'),(2,'adad','dwdd@gmail.com','asdasd','2019-07-12'),(3,'adadasd','dwdd@gmail.com','d','2019-07-12'),(4,'testing','testing@gmail.com','testing software','2019-07-13'),(5,'','',NULL,'2019-07-13'),(6,'erty','shailjafdh@gmail.com',NULL,'2019-07-13');
+
+/*Table structure for table `login_tble` */
+
+DROP TABLE IF EXISTS `login_tble`;
+
+CREATE TABLE `login_tble` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `email` varchar(255) DEFAULT NULL,
+  `pwd` varchar(255) DEFAULT NULL,
+  `created` date DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+
+/*Data for the table `login_tble` */
+
+insert  into `login_tble`(`id`,`email`,`pwd`,`created`) values (1,'admin@gmail.com','123456',NULL);
+
+/*Table structure for table `tbl_banner` */
+
+DROP TABLE IF EXISTS `tbl_banner`;
+
+CREATE TABLE `tbl_banner` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `banner` varchar(255) DEFAULT NULL,
+  `status` varchar(255) DEFAULT NULL,
+  `delete` varchar(255) DEFAULT 'N',
+  `created` date DEFAULT NULL,
+  `banner_title` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=latin1;
+
+/*Data for the table `tbl_banner` */
+
+insert  into `tbl_banner`(`id`,`banner`,`status`,`delete`,`created`,`banner_title`) values (17,'d-293-Lighthouse.jpg','1','N','2019-07-13','shailaja'),(21,'d-312-Penguins.jpg','1','N','2019-07-13','abcd'),(22,'d-992-Koala.jpg','1','N','2019-07-14','shddgn');
+
+/*Table structure for table `tbl_gallery` */
+
+DROP TABLE IF EXISTS `tbl_gallery`;
+
+CREATE TABLE `tbl_gallery` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `gallery` varchar(255) DEFAULT NULL,
+  `delete` varchar(1) DEFAULT 'N',
+  `created` date DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
+
+/*Data for the table `tbl_gallery` */
+
+insert  into `tbl_gallery`(`id`,`gallery`,`delete`,`created`) values (6,'d-740-Desert.jpg','N','2019-07-13'),(8,'d-625-Chrysanthemum.jpg','N','2019-07-13'),(9,'d-246-Jellyfish.jpg','N','2019-07-13'),(10,'d-633-Penguins.jpg','N','2019-07-13');
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
